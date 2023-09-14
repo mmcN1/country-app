@@ -1,0 +1,41 @@
+@import "variables";
+
+$navbar-height: 30px;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $navbar-height;
+  background-color: $color-secondary;
+  padding: $spacing-small $spacing-large;
+
+  &-logo {
+    height: 100%;
+  }
+
+  &-filters {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin-left: $spacing-huge;
+  }
+
+  &-search {
+    flex: 1;
+    height: 25px;
+    border-radius: $border-radius;
+    border: 1px solid $color-dark;
+    background-color: $color-white;
+    padding: $spacing-small;
+  }
+
+  &-group {
+    height: 25px;
+    min-width: 100px;
+    margin-left: $spacing-large;
+    border-radius: $border-radius;
+    border: 1px solid $color-dark;
+    background-color: $color-white;
+  }
+}
